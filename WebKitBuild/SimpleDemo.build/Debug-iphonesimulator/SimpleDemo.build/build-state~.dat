@@ -1,347 +1,0 @@
-TSimpleDemo
-v6
-r1
-cCheck dependencies
-cProcessPCH /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch SimpleDemo/SimpleDemo-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo normal i386
-cGenerateDSYMFile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo
-cCopyStringsFile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj/InfoPlist.strings SimpleDemo/en.lproj/InfoPlist.strings
-cCompileAssetCatalog /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/Images.xcassets
-cProcessInfoPlistFile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist
-cTouch /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
-c0000000052C578690000000000000198
-t1388673129
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
-c0000000052C578690000000000000414
-t1388673129
-s1044
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000052365612000000000000019E
-t1379292690
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000005236562E0000000000445830
-t1379292718
-s4479024
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000005236563C000000000088B570
-t1379292732
-s8959344
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000523656670000000001DB1C90
-t1379292775
-s31136912
-
-N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
-c0000000052364DBF0000000000000AC9
-t1379290559
-s2761
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m
-c0000000053AE8CEE00000000000009F8
-t1403948270
-s2552
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/Images.xcassets
-c0000000053AE8CEE0000000000000088
-t1403948270
-s136
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist
-c0000000053AE8CEE00000000000004C6
-t1403948270
-s1222
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Prefix.pch
-c0000000053AE8CEE0000000000000158
-t1403948270
-s344
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m
-c0000000053AE8CEE00000000000002E1
-t1403948270
-s737
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/en.lproj/InfoPlist.strings
-c0000000053AE8CEE000000000000002D
-t1403948270
-s45
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m
-c0000000053AE8CEE000000000000015A
-t1403948270
-s346
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app
-t1411399634
-s272
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM
-t2
-s0
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist
-t1411399634
-s1019
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/PkgInfo
-t1411399634
-s8
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo
-t1411399633
-s22020
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj/InfoPlist.strings
-t1411399633
-s42
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch
-t1411399633
-s107828
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o
-t1411399633
-s68456
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/SimpleDemo.LinkFileList
-c0000000054203FD000000000000001D3
-t1411399632
-s467
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o
-t1411399633
-s42648
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o
-t1411399633
-s3576
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_dependencies.txt
-t1411399634
-s420
-
-N/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_generated_info.plist
-t1411399634
-s525
-
-CBuild AST from /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m
-r0
-
-CBuild AST from /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m
-r0
-
-CBuild AST from /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m
-r0
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies3bc2395077d0b941^8cf4425077d0b941^---0#1#1#--18"Check dependencies36"85A18188-1675-4B7F-B844-ABDDC9DFF3B3-
-
-CCompileAssetCatalog /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/Images.xcassets
-s433092433.962365
-e433092434.685811
-r1
-xCompileAssetCatalog
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/Images.xcassets
-o2014-09-22 23:27:14.350 IBCocoaTouchImageCatalogTool[34731:303] CFPreferences: user home directory at file:///Users/wangqianzhou/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
-o/* com.apple.actool.compilation-results */
-o/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/LaunchImage-700-568h@2x.png
-o/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Assets.car
-o/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_generated_info.plist
-o
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CompileAssetCatalog WebKitBuild/Debug-iphonesimulator/SimpleDemo.app SimpleDemo/Images.xcassets95"CompileAssetCatalog WebKitBuild/Debug-iphonesimulator/SimpleDemo.app SimpleDemo/Images.xcassets056df65177d0b941^9291af5277d0b941^-679"2014-09-22 23:27:14.350 IBCocoaTouchImageCatalogTool[34731:303] CFPreferences: user home directory at file:///Users/wangqianzhou/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile./* com.apple.actool.compilation-results *//Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/LaunchImage-700-568h@2x.png/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Assets.car/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@89"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/Images.xcassets/0000000000000000^1220"CompileAssetCatalog WebKitBuild/Debug-iphonesimulator/SimpleDemo.app SimpleDemo/Images.xcassets    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphonesimulator --minimum-deployment-target 7.0 --target-device iphone --compress-pngs --compile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/Images.xcassets36"64489671-3F56-44F2-8BBC-087EDAFEDD95-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CCompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s433092433.128186
-e433092433.213826
-r1
-xCompileC
-xWebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.h
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m203"CompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o SimpleDemo/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc3f1205177d0b941^bebe365177d0b941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m0000000000000000^3849"CompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o SimpleDemo/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/wangqianzhou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-generated-files.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-own-target-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-all-target-headers.hmap -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-project-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources/i386 -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources -F/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator -include /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch -MMD -MT dependencies -MF /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.dia -c /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.m -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o36"8E7EB258-CE54-4058-BF2C-B0171D87793E-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CCompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s433092433.127739
-e433092433.204339
-r1
-xCompileC
-xWebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m209"CompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o SimpleDemo/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbadc205177d0b941^5052345177d0b941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m0000000000000000^3867"CompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o SimpleDemo/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/wangqianzhou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-generated-files.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-own-target-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-all-target-headers.hmap -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-project-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources/i386 -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources -F/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator -include /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch -MMD -MT dependencies -MF /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.dia -c /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.m -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o36"71D58889-09AE-4390-B75B-5CA12FF92BE1-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CCompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s433092433.128507
-e433092433.193634
-r1
-xCompileC
-xWebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/AppDelegate.h
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/ViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m189"CompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o SimpleDemo/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere700215177d0b941^7592315177d0b941^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m0000000000000000^3807"CompileC WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o SimpleDemo/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/wangqianzhou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-generated-files.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-own-target-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-all-target-headers.hmap -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-project-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources/i386 -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources -F/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator -include /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch -MMD -MT dependencies -MF /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.dia -c /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/main.m -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o36"936FB743-A248-41D0-A8FF-4E5ADBC13A5A-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CCopyStringsFile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj/InfoPlist.strings SimpleDemo/en.lproj/InfoPlist.strings
-s433092433.962018
-e433092433.963097
-r1
-xCopyStringsFile
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj/InfoPlist.strings
-xSimpleDemo/en.lproj/InfoPlist.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Copy SimpleDemo/en.lproj/InfoPlist.strings129"CopyStringsFile WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj/InfoPlist.strings SimpleDemo/en.lproj/InfoPlist.stringsb857f65177d0b941^0d8ef65177d0b941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/en.lproj/InfoPlist.strings0000000000000000^631"CopyStringsFile WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj/InfoPlist.strings SimpleDemo/en.lproj/InfoPlist.strings    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/en.lproj -- SimpleDemo/en.lproj/InfoPlist.strings36"35799650-73E8-46CD-8673-376F3843CFC3-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CGenerateDSYMFile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo
-s433092433.931092
-e433092433.961600
-r1
-xGenerateDSYMFile
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Generate /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM130"GenerateDSYMFile WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemobe69ee5177d0b941^512df65177d0b941^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM0034b894deffdf42^715"GenerateDSYMFile WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app.dSYM36"947FC0CB-54F0-4F63-956D-3492875EFD24-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CLd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo normal i386
-s433092433.214535
-e433092433.930373
-r1
-xLd
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo
-xnormal
-xi386
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/SimpleDemo.LinkFileList
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/ViewController.o
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/AppDelegate.o
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/main.o
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
-d/usr/lib/libSystem.B.dylib
-d/usr/lib/system/libcache.dylib
-d/usr/lib/system/libcommonCrypto.dylib
-d/usr/lib/system/libcompiler_rt.dylib
-d/usr/lib/system/libcopyfile.dylib
-d/usr/lib/system/libcorecrypto.dylib
-d/usr/lib/system/libdyld.dylib
-d/usr/lib/system/libkeymgr.dylib
-d/usr/lib/system/liblaunch.dylib
-d/usr/lib/system/libmacho.dylib
-d/usr/lib/system/libquarantine.dylib
-d/usr/lib/system/libremovefile.dylib
-d/usr/lib/system/libsystem_asl.dylib
-d/usr/lib/system/libsystem_blocks.dylib
-d/usr/lib/system/libsystem_c.dylib
-d/usr/lib/system/libsystem_configuration.dylib
-d/usr/lib/system/libsystem_dnssd.dylib
-d/usr/lib/system/libsystem_info.dylib
-d/usr/lib/system/libsystem_kernel.dylib
-d/usr/lib/system/libsystem_m.dylib
-d/usr/lib/system/libsystem_malloc.dylib
-d/usr/lib/system/libsystem_notify.dylib
-d/usr/lib/system/libsystem_platform.dylib
-d/usr/lib/system/libsystem_pthread.dylib
-d/usr/lib/system/libsystem_sandbox.dylib
-d/usr/lib/system/libunc.dylib
-d/usr/lib/system/libunwind.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Link /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo74"Ld WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo normal i3869cfc365177d0b941^0a2eee5177d0b941^---0#0#1#--1476"Ld WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo normal i386    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator -F/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator -filelist /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/SimpleDemo.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/Objects-normal/i386/SimpleDemo_dependency_info.dat -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/SimpleDemo36"BD7D6FE6-CAED-4165-9426-8629FBC1829F-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CProcessInfoPlistFile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist
-s433092434.686353
-e433092434.688191
-r1
-xProcessInfoPlistFile
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Process /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist113"ProcessInfoPlistFile WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist SimpleDemo/SimpleDemo-Info.plistbdc5af5277d0b941^cb2eb05277d0b941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist0000000000000000^972"ProcessInfoPlistFile WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist SimpleDemo/SimpleDemo-Info.plist    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Info.plist -genpkginfo /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/assetcatalog_generated_info.plist -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app/Info.plist36"B22688D4-EE8D-4648-86C0-480E73DD401B-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CProcessPCH /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch SimpleDemo/SimpleDemo-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s433092432.265452
-e433092433.126497
-r1
-xProcessPCH
-x/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch
-xSimpleDemo/SimpleDemo-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile SimpleDemo/SimpleDemo-Prefix.pch215"ProcessPCH WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch SimpleDemo/SimpleDemo-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf415445077d0b941^e562205177d0b941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Prefix.pch0000000000000000^3714"ProcessPCH WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch SimpleDemo/SimpleDemo-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/wangqianzhou/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-generated-files.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-own-target-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-all-target-headers.hmap -iquote /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/SimpleDemo-project-headers.hmap -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources/i386 -I/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/SimpleDemo.build/Debug-iphonesimulator/SimpleDemo.build/DerivedSources -F/Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator --serialize-diagnostics /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.dia -MMD -MT dependencies -MF /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.d -c /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/SimpleDemo/SimpleDemo-Prefix.pch -o /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/PrecompiledHeaders/SimpleDemo-Prefix-bgnclbucpirdkaaqvfenjckejguh/SimpleDemo-Prefix.pch.pch36"C9440B3A-9470-423E-8AB4-A1CB5F848006-
-bE4B29025-DFA9-49D9-A7B0-A4BBB6253E8C
-
-CProcessPCH /Users/wangqianzhou/Library/Developer/Xcode/DerivedData/SimpleDemo-epxykxrirfmruhefpsvbvykvtzeo/Index/PrecompiledHeaders/SimpleDemo-Prefix-bfoqafajkvntyegekbsprbxdmfhn_ast/SimpleDemo-Prefix.pch.pch SimpleDemo/SimpleDemo-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CTouch /Users/wangqianzhou/Desktop/GitRepositories/SimpleDemo/WebKitBuild/Debug-iphonesimulator/SimpleDemo.app
-r0
-
