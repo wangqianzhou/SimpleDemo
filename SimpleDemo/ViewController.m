@@ -132,7 +132,7 @@
 - (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
 {
     SEL sel = NSSelectorFromString([NSString stringWithFormat:@"onBtn_%ld", idx]);
-    objc_msgSend(self, sel);
+    ((void(*)(id,SEL))objc_msgSend)(self, sel);
 }
 
 #pragma mark-
