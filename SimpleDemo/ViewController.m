@@ -131,7 +131,7 @@
 #pragma mark- QuadCurveMenuDelegate
 - (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
 {
-    SEL sel = NSSelectorFromString([NSString stringWithFormat:@"onBtn_%ld", idx]);
+    SEL sel = NSSelectorFromString([NSString stringWithFormat:@"onBtn_%ld", (long)idx]);
     ((void(*)(id,SEL))objc_msgSend)(self, sel);
 }
 
