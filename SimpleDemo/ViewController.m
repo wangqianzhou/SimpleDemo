@@ -11,7 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <objc/message.h>
 
-@interface ViewController ()<QuadCurveMenuDelegate, NSMachPortDelegate>
+@interface ViewController ()<QuadCurveMenuDelegate>
 @property(nonatomic, retain)QuadCurveMenu* sysMenu;
 @end
 
@@ -21,7 +21,7 @@
     CGRect screen = [[UIScreen mainScreen] bounds];
     
     UIView* mainView = [[[UIView alloc] initWithFrame:screen] autorelease];
-    [mainView setBackgroundColor:[UIColor grayColor]];
+    [mainView setBackgroundColor:[UIColor whiteColor]];
     self.view = mainView;
     
     [self initSysMenu];
@@ -50,7 +50,7 @@
     return NO;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return 0;
 }
