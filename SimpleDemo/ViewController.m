@@ -7,12 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "QuadCurveMenu.h"
-#import <QuartzCore/QuartzCore.h>
 #import <objc/message.h>
 
-@interface ViewController ()<QuadCurveMenuDelegate>
-@property(nonatomic, retain)QuadCurveMenu* sysMenu;
+const int cstBtnHeight = 100;
+const int cstBtnWidth  = 200;
+
+@interface ViewController ()
+@property(nonatomic, retain)UIButton* btn;
 @end
 
 @implementation ViewController
@@ -24,12 +25,23 @@
     [mainView setBackgroundColor:[UIColor whiteColor]];
     self.view = mainView;
     
-    [self initSysMenu];
+    _btn = [[UIButton buttonWithType:UIButtonTypeSystem] retain];
+    [_btn addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_btn setTitle:@"ClickMe" forState: UIControlStateNormal];
+    [_btn setTitle:@"ClickMe" forState: UIControlStateHighlighted];
+    
+    float x = (screen.size.width - cstBtnWidth) / 2.0f;
+    float y = (screen.size.height - cstBtnHeight) / 2.0f;
+    _btn.frame = CGRectMake(x, y, cstBtnWidth, cstBtnHeight);
+    _btn.backgroundColor = [UIColor redColor];
+    
+    [self.view addSubview:_btn];
 }
 
 - (void)dealloc
 {
-    [_sysMenu release], _sysMenu = nil;
+    [_btn removeTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventAllEvents];
+    [_btn release], _btn = nil;
     [super dealloc];
 }
 
@@ -60,124 +72,11 @@
     return YES;
 }
 
-- (void)initSysMenu
-{
-    UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
-    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
-    
-    UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
-    
-    QuadCurveMenuItem *starMenuItem1 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem5 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem6 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem7 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    QuadCurveMenuItem *starMenuItem8 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
-                                                               highlightedImage:storyMenuItemImagePressed
-                                                                   ContentImage:starImage
-                                                        highlightedContentImage:nil];
-    
-    NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, starMenuItem6, starMenuItem7,starMenuItem8, nil];
-    [starMenuItem1 release];
-    [starMenuItem2 release];
-    [starMenuItem3 release];
-    [starMenuItem4 release];
-    [starMenuItem5 release];
-    [starMenuItem6 release];
-    [starMenuItem7 release];
-    [starMenuItem8 release];
-    
-    QuadCurveMenu *menu = [[[QuadCurveMenu alloc] initWithFrame:self.view.bounds menus:menus] autorelease];
-	
-	// customize menu
-	/*
-     menu.rotateAngle = M_PI/3;
-     menu.menuWholeAngle = M_PI;
-     menu.timeOffset = 0.2f;
-     menu.farRadius = 180.0f;
-     menu.endRadius = 100.0f;
-     menu.nearRadius = 50.0f;
-     */
-	
-    menu.delegate = self;
-    
-    [self.view addSubview:menu];
-    self.sysMenu = menu;
-}
-
-#pragma mark- QuadCurveMenuDelegate
-- (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
-{
-    SEL sel = NSSelectorFromString([NSString stringWithFormat:@"onBtn_%ld", (long)idx]);
-    ((void(*)(id,SEL))objc_msgSend)(self, sel);
-}
-
-#pragma mark-
 #pragma mark- Functions
-- (void)onBtn_0
+- (void)onBtnClick:(id)sender
 {
 
 }
 
-- (void)onBtn_1
-{
-
-}
-
-- (void)onBtn_2
-{
-    
-}
-
-- (void)onBtn_3
-{
-    
-}
-
-- (void)onBtn_4
-{
-    
-}
-
-- (void)onBtn_5
-{
-    
-}
-
-- (void)onBtn_6
-{
-    
-}
-
-- (void)onBtn_7
-{
-    
-}
-
-#pragma mark-
-#pragma mark- Other
 
 @end
