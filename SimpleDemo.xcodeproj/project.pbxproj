@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930E2FFC1DE3E527007195DE /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930E2FFB1DE3E527007195DE /* CollectionViewCell.m */; };
+		930E2FFF1DE3E56C007195DE /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930E2FFE1DE3E56C007195DE /* CollectionReusableView.m */; };
+		933A9DFF1DE9749500FA3ED5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933A9DFE1DE9749500FA3ED5 /* SystemConfiguration.framework */; };
 		93560816185DFA7E0020ACDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560815185DFA7E0020ACDB /* Foundation.framework */; };
 		93560818185DFA7E0020ACDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560817185DFA7E0020ACDB /* CoreGraphics.framework */; };
 		9356081A185DFA7E0020ACDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560819185DFA7E0020ACDB /* UIKit.framework */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930E2FFA1DE3E527007195DE /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		930E2FFB1DE3E527007195DE /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		930E2FFD1DE3E56C007195DE /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		930E2FFE1DE3E56C007195DE /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		933A9DFE1DE9749500FA3ED5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		93560812185DFA7E0020ACDB /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93560815185DFA7E0020ACDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93560817185DFA7E0020ACDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -40,6 +48,7 @@
 			files = (
 				93560818185DFA7E0020ACDB /* CoreGraphics.framework in Frameworks */,
 				9356081A185DFA7E0020ACDB /* UIKit.framework in Frameworks */,
+				933A9DFF1DE9749500FA3ED5 /* SystemConfiguration.framework in Frameworks */,
 				93560816185DFA7E0020ACDB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +76,7 @@
 		93560814185DFA7E0020ACDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				933A9DFE1DE9749500FA3ED5 /* SystemConfiguration.framework */,
 				93560815185DFA7E0020ACDB /* Foundation.framework */,
 				93560817185DFA7E0020ACDB /* CoreGraphics.framework */,
 				93560819185DFA7E0020ACDB /* UIKit.framework */,
@@ -84,6 +94,10 @@
 				9356082B185DFA7E0020ACDB /* ViewController.m */,
 				9356082D185DFA7E0020ACDB /* Images.xcassets */,
 				9356081C185DFA7E0020ACDB /* Supporting Files */,
+				930E2FFA1DE3E527007195DE /* CollectionViewCell.h */,
+				930E2FFB1DE3E527007195DE /* CollectionViewCell.m */,
+				930E2FFD1DE3E56C007195DE /* CollectionReusableView.h */,
+				930E2FFE1DE3E56C007195DE /* CollectionReusableView.m */,
 			);
 			path = SimpleDemo;
 			sourceTree = "<group>";
@@ -171,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9356082C185DFA7E0020ACDB /* ViewController.m in Sources */,
+				930E2FFF1DE3E56C007195DE /* CollectionReusableView.m in Sources */,
 				93560826185DFA7E0020ACDB /* AppDelegate.m in Sources */,
+				930E2FFC1DE3E527007195DE /* CollectionViewCell.m in Sources */,
 				93560822185DFA7E0020ACDB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
@@ -282,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
