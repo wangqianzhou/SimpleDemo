@@ -100,7 +100,7 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "-loadView"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -116,7 +116,7 @@
             startingLineNumber = "78"
             endingLineNumber = "78"
             landmarkName = "-onBtnClick:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
