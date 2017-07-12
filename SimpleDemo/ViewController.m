@@ -8,12 +8,55 @@
 
 #import "ViewController.h"
 #import <objc/message.h>
+#import <JavaScriptCore/JavaScriptCore.h>
+#import <JavaScriptCore/JSExport.h>
+
+@protocol TestObjExports <JSExport>
+@property(nonatomic, retain, readwrite)NSString* pa;
+@property(nonatomic, retain, readwrite)NSDictionary* pb;
+- (instancetype)initWithParamA:(NSString*)a paramB:(NSDictionary*)b;
+
++ (instancetype)makeObj;
+@end
+
+@interface TestObj : NSObject<TestObjExports>
+//JSExportAs(constructor,
+- (instancetype)initWithParamA:(NSString*)a paramB:(NSDictionary*)b;
+//           );
+@end
+
+@implementation TestObj
+@synthesize pa = _pa;
+@synthesize pb = _pb;
+- (instancetype)initWithParamA:(NSString*)a paramB:(NSDictionary*)b;
+{
+    if (self = [super init])
+    {
+        _pa = [a retain];
+        _pb = [b retain];
+    }
+    
+    return self;
+}
+
++ (instancetype)makeObj
+{
+    return [[[TestObj alloc] init] autorelease];
+}
+
+- (void)dealloc
+{
+    [super dealloc];
+}
+
+@end
 
 const int cstBtnHeight = 100;
 const int cstBtnWidth  = 200;
 
 @interface ViewController ()
 @property(nonatomic, retain)UIButton* btn;
+@property(nonatomic, retain)JSContext* jsContext;
 @end
 
 @implementation ViewController
@@ -34,12 +77,17 @@ const int cstBtnWidth  = 200;
     float y = (screen.size.height - cstBtnHeight) / 2.0f;
     _btn.frame = CGRectMake(x, y, cstBtnWidth, cstBtnHeight);
     _btn.backgroundColor = [UIColor redColor];
+    _jsContext = [[JSContext alloc] init];
+    _jsContext.name = @"TestContext";
+    
+    _jsContext[@"Test"] = [TestObj class];
     
     [self.view addSubview:_btn];
 }
 
 - (void)dealloc
 {
+    [_jsContext release], _jsContext = nil;
     [_btn removeTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventAllEvents];
     [_btn release], _btn = nil;
     [super dealloc];
