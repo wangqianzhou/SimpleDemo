@@ -12,40 +12,32 @@
 #import <JavaScriptCore/JSExport.h>
 
 @protocol TestObjExports <JSExport>
-@property(nonatomic, retain, readwrite)NSString* pa;
-@property(nonatomic, retain, readwrite)NSDictionary* pb;
-- (instancetype)initWithParamA:(NSString*)a paramB:(NSDictionary*)b;
+@property(nonatomic, retain, )NSArray* p;
 
-+ (instancetype)makeObj;
+- (instancetype)init;
 @end
 
 @interface TestObj : NSObject<TestObjExports>
-//JSExportAs(constructor,
-- (instancetype)initWithParamA:(NSString*)a paramB:(NSDictionary*)b;
-//           );
+
+
 @end
 
 @implementation TestObj
-@synthesize pa = _pa;
-@synthesize pb = _pb;
-- (instancetype)initWithParamA:(NSString*)a paramB:(NSDictionary*)b;
+@synthesize p = _p;
+
+- (instancetype)init;
 {
     if (self = [super init])
     {
-        _pa = [a retain];
-        _pb = [b retain];
+        _p = [NSArray array];
     }
     
     return self;
 }
 
-+ (instancetype)makeObj
-{
-    return [[[TestObj alloc] init] autorelease];
-}
-
 - (void)dealloc
 {
+    [_p release], _p = nil;
     [super dealloc];
 }
 
@@ -57,6 +49,9 @@ const int cstBtnWidth  = 200;
 @interface ViewController ()
 @property(nonatomic, retain)UIButton* btn;
 @property(nonatomic, retain)JSContext* jsContext;
+@property(nonatomic, retain)NSMutableDictionary* mEventListener;
+@property (nonatomic, retain) NSMutableDictionary<NSString*, dispatch_source_t>* singleTimers;
+@property (nonatomic, retain) NSMutableDictionary<NSString*, dispatch_source_t>* repeatTimers;
 @end
 
 @implementation ViewController
@@ -80,7 +75,10 @@ const int cstBtnWidth  = 200;
     _jsContext = [[JSContext alloc] init];
     _jsContext.name = @"TestContext";
     
-    _jsContext[@"Test"] = [TestObj class];
+    _jsContext[@"sayHello"] = ^{
+        NSLog(@"Hello world...");
+    };
+    
     
     [self.view addSubview:_btn];
 }
@@ -123,8 +121,7 @@ const int cstBtnWidth  = 200;
 #pragma mark- Functions
 - (void)onBtnClick:(id)sender
 {
-
+    [[_jsContext globalObject] invokeMethod:@"sayHello" withArguments:@[]];
 }
-
 
 @end
