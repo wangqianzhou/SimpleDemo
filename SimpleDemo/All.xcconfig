@@ -1,0 +1,9 @@
+//
+//  All.xcconfig
+//  SimpleDemo
+//
+//  Created by wangqianzhou on 14/09/2017.
+//  Copyright © 2017 wangqianzhou. All rights reserved.
+//
+appDisplayName=HHH
+appIdentifier=com.ucweb.iphone.monkey

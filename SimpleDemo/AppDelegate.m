@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppLauncher.h"
 
 @implementation AppDelegate
 @synthesize window;
@@ -20,6 +21,13 @@
     self.viewController = [[[ViewController alloc] init] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsSourceApplicationKey] != nil)
+    {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [AppLauncher run];            
+        });
+    }
     
     return YES;
 }
