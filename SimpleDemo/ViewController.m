@@ -75,8 +75,19 @@ const int cstBtnWidth  = 200;
 #pragma mark- Functions
 - (void)onBtnClick:(id)sender
 {
-
+    [self wakeupApplicationWithBundle:@"com.ucweb.iphone.dev"];
 }
 
+- (void)wakeupApplicationWithBundle:(NSString*)bundleID
+{
+    id workspaceClass = NSClassFromString(@"LSApplicationWorkspace");
+    SEL instanceSEL = NSSelectorFromString(@"defaultWorkspace");
+    SEL openSEL = NSSelectorFromString(@"openApplicationWithBundleID:");
+    
+    id instance = ((id(*)(id, SEL))objc_msgSend)(workspaceClass, instanceSEL);
+    BOOL result = ((BOOL(*)(id, SEL, id))objc_msgSend)(instance, openSEL, bundleID);
+    
+    NSLog(@"Open %@ with result : %zd", bundleID, result);
+}
 
 @end
