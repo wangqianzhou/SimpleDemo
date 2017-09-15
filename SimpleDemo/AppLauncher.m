@@ -41,7 +41,8 @@
     
     NSDictionary* config = @{
                              @"callback_bundle_id" : [[NSBundle mainBundle] bundleIdentifier],
-                             @"ignore_test_result" : @(1)
+                             @"ignore_test_result" : @(1),
+                             @"clearCache" : @(1)
                              };
     
     
