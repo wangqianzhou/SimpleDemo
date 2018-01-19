@@ -13,7 +13,7 @@ const int cstBtnHeight = 100;
 const int cstBtnWidth  = 200;
 
 @interface ViewController ()
-@property(nonatomic, retain)UIButton* btn;
+@property(nonatomic, strong)UIButton* btn;
 @end
 
 @implementation ViewController
@@ -21,11 +21,11 @@ const int cstBtnWidth  = 200;
 {
     CGRect screen = [[UIScreen mainScreen] bounds];
     
-    UIView* mainView = [[[UIView alloc] initWithFrame:screen] autorelease];
+    UIView* mainView = [[UIView alloc] initWithFrame:screen];
     [mainView setBackgroundColor:[UIColor whiteColor]];
     self.view = mainView;
     
-    _btn = [[UIButton buttonWithType:UIButtonTypeSystem] retain];
+    _btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [_btn addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btn setTitle:@"ClickMe" forState: UIControlStateNormal];
     [_btn setTitle:@"ClickMe" forState: UIControlStateHighlighted];
@@ -41,8 +41,6 @@ const int cstBtnWidth  = 200;
 - (void)dealloc
 {
     [_btn removeTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventAllEvents];
-    [_btn release], _btn = nil;
-    [super dealloc];
 }
 
 - (void)viewDidLoad
