@@ -1,0 +1,14 @@
+//
+//  Release.xcconfig
+//  SimpleDemo
+//
+//  Created by wangqianzhou on 19/01/2018.
+//  Copyright © 2018 wangqianzhou. All rights reserved.
+//
+#include "Shared.xcconfig"
+
+COPY_PHASE_STRIP = YES;
+ENABLE_NS_ASSERTIONS = NO;
+
+
+VALIDATE_PRODUCT = YES;
