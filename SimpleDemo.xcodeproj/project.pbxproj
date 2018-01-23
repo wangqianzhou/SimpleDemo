@@ -15,6 +15,8 @@
 		93560826185DFA7E0020ACDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93560825185DFA7E0020ACDB /* AppDelegate.m */; };
 		9356082C185DFA7E0020ACDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356082B185DFA7E0020ACDB /* ViewController.m */; };
 		9356082E185DFA7E0020ACDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9356082D185DFA7E0020ACDB /* Images.xcassets */; };
+		939F27402016E10E00012954 /* CustomPlaneNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 939F273F2016E10E00012954 /* CustomPlaneNode.m */; };
+		939F51C12015817D00B941B1 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939F51C02015817D00B941B1 /* ARKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		93576B122011ED04003A003C /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		93576B132011ED12003A003C /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		93576B142011ED1E003A003C /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		939F273E2016E10E00012954 /* CustomPlaneNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPlaneNode.h; sourceTree = "<group>"; };
+		939F273F2016E10E00012954 /* CustomPlaneNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPlaneNode.m; sourceTree = "<group>"; };
+		939F51C02015817D00B941B1 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939F51C12015817D00B941B1 /* ARKit.framework in Frameworks */,
 				93560818185DFA7E0020ACDB /* CoreGraphics.framework in Frameworks */,
 				9356081A185DFA7E0020ACDB /* UIKit.framework in Frameworks */,
 				93560816185DFA7E0020ACDB /* Foundation.framework in Frameworks */,
@@ -70,6 +76,7 @@
 		93560814185DFA7E0020ACDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				939F51C02015817D00B941B1 /* ARKit.framework */,
 				93560815185DFA7E0020ACDB /* Foundation.framework */,
 				93560817185DFA7E0020ACDB /* CoreGraphics.framework */,
 				93560819185DFA7E0020ACDB /* UIKit.framework */,
@@ -85,6 +92,8 @@
 				93560825185DFA7E0020ACDB /* AppDelegate.m */,
 				9356082A185DFA7E0020ACDB /* ViewController.h */,
 				9356082B185DFA7E0020ACDB /* ViewController.m */,
+				939F273E2016E10E00012954 /* CustomPlaneNode.h */,
+				939F273F2016E10E00012954 /* CustomPlaneNode.m */,
 				9356082D185DFA7E0020ACDB /* Images.xcassets */,
 				9356081C185DFA7E0020ACDB /* Supporting Files */,
 			);
@@ -142,7 +151,7 @@
 				ORGANIZATIONNAME = wangqianzhou;
 				TargetAttributes = {
 					93560811185DFA7E0020ACDB = {
-						DevelopmentTeam = X3X7VZZ2J6;
+						DevelopmentTeam = 63WDBES6G3;
 					};
 				};
 			};
@@ -184,6 +193,7 @@
 				9356082C185DFA7E0020ACDB /* ViewController.m in Sources */,
 				93560826185DFA7E0020ACDB /* AppDelegate.m in Sources */,
 				93560822185DFA7E0020ACDB /* main.m in Sources */,
+				939F27402016E10E00012954 /* CustomPlaneNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +310,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = X3X7VZZ2J6;
+				DEVELOPMENT_TEAM = 63WDBES6G3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.professor.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -316,10 +327,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = X3X7VZZ2J6;
+				DEVELOPMENT_TEAM = 63WDBES6G3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.professor.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
