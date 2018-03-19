@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9310CCF3205F4C2C0061E261 /* UIView+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9310CCF1205F4C2C0061E261 /* UIView+Addtions.m */; };
 		93560816185DFA7E0020ACDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560815185DFA7E0020ACDB /* Foundation.framework */; };
 		93560818185DFA7E0020ACDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560817185DFA7E0020ACDB /* CoreGraphics.framework */; };
 		9356081A185DFA7E0020ACDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560819185DFA7E0020ACDB /* UIKit.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9310CCF1205F4C2C0061E261 /* UIView+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addtions.m"; sourceTree = "<group>"; };
+		9310CCF2205F4C2C0061E261 /* UIView+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addtions.h"; sourceTree = "<group>"; };
 		93560812185DFA7E0020ACDB /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93560815185DFA7E0020ACDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93560817185DFA7E0020ACDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9310CCF0205F4C2C0061E261 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9310CCF1205F4C2C0061E261 /* UIView+Addtions.m */,
+				9310CCF2205F4C2C0061E261 /* UIView+Addtions.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		93560809185DFA7E0020ACDB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				93576B112011ECF6003A003C /* Configuration */,
+				9310CCF0205F4C2C0061E261 /* utils */,
 				93560824185DFA7E0020ACDB /* AppDelegate.h */,
 				93560825185DFA7E0020ACDB /* AppDelegate.m */,
 				9356082A185DFA7E0020ACDB /* ViewController.h */,
@@ -183,6 +196,7 @@
 			files = (
 				9356082C185DFA7E0020ACDB /* ViewController.m in Sources */,
 				93560826185DFA7E0020ACDB /* AppDelegate.m in Sources */,
+				9310CCF3205F4C2C0061E261 /* UIView+Addtions.m in Sources */,
 				93560822185DFA7E0020ACDB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
