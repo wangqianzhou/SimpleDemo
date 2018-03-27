@@ -9,12 +9,15 @@
 #import "ViewController.h"
 #import <objc/message.h>
 #import "UIView+Addtions.h"
+#import <Photos/Photos.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 const int cstBtnHeight = 100;
 const int cstBtnWidth  = 200;
 
-@interface ViewController ()
+@interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property(nonatomic, strong)UIButton* btn;
+
 @end
 
 @implementation ViewController
@@ -74,8 +77,54 @@ const int cstBtnWidth  = 200;
 #pragma mark- Functions
 - (void)onBtnClick:(id)sender
 {
-
+    UIImagePickerController* pickerCtrl = [[UIImagePickerController alloc] init];
+    pickerCtrl.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    pickerCtrl.delegate = self;
+    
+    [self presentViewController:pickerCtrl animated:YES completion:^{
+        
+    }];
 }
 
 
+#pragma mark- UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    [self fetchDataFromPickingImage:info complete:^(NSData * imageData) {
+        NSLog(@"image data length : %zd", [imageData length]);
+        
+        char* buffer = (char*)malloc(imageData.length);
+        [imageData getBytes:buffer length:imageData.length];
+        NSLog(@"first char : %c", buffer[0]);
+    }];
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark-
+- (void)fetchDataFromPickingImage:(NSDictionary<NSString *,id> *)info complete:(void(^)(NSData* imageData))complete
+{
+    if (@available(iOS 11.0, *))
+    {
+        NSURL* imageURL = [info objectForKey:UIImagePickerControllerImageURL];
+        NSData* imageData = [NSData dataWithContentsOfURL:imageURL];
+        complete(imageData);
+    }
+    else
+    {
+        NSURL* assetsURL = [info objectForKey:UIImagePickerControllerReferenceURL];
+        PHFetchResult<PHAsset *> *result = [PHAsset fetchAssetsWithALAssetURLs:@[assetsURL] options:0];
+        
+        PHImageRequestOptions* option = [[PHImageRequestOptions alloc] init];
+        [[PHImageManager defaultManager] requestImageDataForAsset:result.firstObject options:option resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+            complete(imageData);
+        }];
+        
+    }
+}
 @end
