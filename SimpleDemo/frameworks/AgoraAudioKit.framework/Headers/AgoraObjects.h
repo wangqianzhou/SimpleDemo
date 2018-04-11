@@ -72,6 +72,11 @@ __attribute__((visibility("default"))) @interface AgoraLiveTranscodingUser: NSOb
 @property (assign, nonatomic) NSInteger audioChannel;
 @end
 
+__attribute__((visibility("default"))) @interface AgoraImage: NSObject
+@property (strong, nonatomic) NSURL *_Nonnull url;
+@property (assign, nonatomic) CGRect rect;
+@end
+
 __attribute__((visibility("default"))) @interface AgoraLiveTranscoding: NSObject
 @property (assign, nonatomic) CGSize size;
 @property (assign, nonatomic) NSInteger videoBitrate;
@@ -84,6 +89,7 @@ __attribute__((visibility("default"))) @interface AgoraLiveTranscoding: NSObject
 @property (strong, nonatomic) COLOR_CLASS *_Nullable backgroundColor;
 @property (copy, nonatomic) NSArray<AgoraLiveTranscodingUser *> *_Nullable transcodingUsers;
 @property (copy, nonatomic) NSString *_Nullable transcodingExtraInfo;
+@property (strong, nonatomic) AgoraImage *_Nullable watermark;
 
 @property (assign, nonatomic) AgoraAudioSampleRateType audioSampleRate;
 @property (assign, nonatomic) NSInteger audioBitrate;  //kbps

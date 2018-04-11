@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9310CCF3205F4C2C0061E261 /* UIView+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9310CCF1205F4C2C0061E261 /* UIView+Addtions.m */; };
+		93291090207B81FC00C11B01 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9329108B207B81E700C11B01 /* libcocos2d iOS.a */; };
+		93291092207B82AD00C11B01 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93291091207B82AD00C11B01 /* OpenAL.framework */; };
+		93291094207B832200C11B01 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93291093207B832200C11B01 /* CoreMotion.framework */; };
+		93291096207B88AF00C11B01 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93291095207B88AF00C11B01 /* libz.tbd */; };
+		93291098207B88D900C11B01 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93291097207B88D900C11B01 /* libiconv.tbd */; };
 		93560816185DFA7E0020ACDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560815185DFA7E0020ACDB /* Foundation.framework */; };
 		93560818185DFA7E0020ACDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560817185DFA7E0020ACDB /* CoreGraphics.framework */; };
 		9356081A185DFA7E0020ACDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93560819185DFA7E0020ACDB /* UIKit.framework */; };
@@ -25,9 +30,45 @@
 		939BA88E206A54F5006357EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BA88D206A54F5006357EA /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		93291088207B81E700C11B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1551A33F158F2AB200E66CFE;
+			remoteInfo = "libcocos2d Mac";
+		};
+		9329108A207B81E700C11B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4D641783777C0073F6A7;
+			remoteInfo = "libcocos2d iOS";
+		};
+		9329108C207B81E700C11B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 507B40FD1C31BDD30067B53E;
+			remoteInfo = "libcocos2d tvOS";
+		};
+		9329108E207B81F500C11B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4C241783777C0073F6A7;
+			remoteInfo = "libcocos2d iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9310CCF1205F4C2C0061E261 /* UIView+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addtions.m"; sourceTree = "<group>"; };
 		9310CCF2205F4C2C0061E261 /* UIView+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addtions.h"; sourceTree = "<group>"; };
+		93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "cocos2d-x-3.16/build/cocos2d_libs.xcodeproj"; sourceTree = "<group>"; };
+		93291091207B82AD00C11B01 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		93291093207B832200C11B01 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		93291095207B88AF00C11B01 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		93291097207B88D900C11B01 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		93560812185DFA7E0020ACDB /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93560815185DFA7E0020ACDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93560817185DFA7E0020ACDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +99,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93291098207B88D900C11B01 /* libiconv.tbd in Frameworks */,
+				93291096207B88AF00C11B01 /* libz.tbd in Frameworks */,
+				93291094207B832200C11B01 /* CoreMotion.framework in Frameworks */,
+				93291092207B82AD00C11B01 /* OpenAL.framework in Frameworks */,
+				93291090207B81FC00C11B01 /* libcocos2d iOS.a in Frameworks */,
 				939BA88E206A54F5006357EA /* AudioToolbox.framework in Frameworks */,
 				939BA88C206A54EB006357EA /* AVFoundation.framework in Frameworks */,
 				939BA88A206A54E4006357EA /* CoreTelephony.framework in Frameworks */,
@@ -83,12 +129,23 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		93291083207B81E600C11B01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93291089207B81E700C11B01 /* libcocos2d Mac.a */,
+				9329108B207B81E700C11B01 /* libcocos2d iOS.a */,
+				9329108D207B81E700C11B01 /* libcocos2d tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		93560809185DFA7E0020ACDB = {
 			isa = PBXGroup;
 			children = (
 				9356081B185DFA7E0020ACDB /* SimpleDemo */,
 				93560814185DFA7E0020ACDB /* Frameworks */,
 				93560813185DFA7E0020ACDB /* Products */,
+				93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +160,10 @@
 		93560814185DFA7E0020ACDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93291097207B88D900C11B01 /* libiconv.tbd */,
+				93291095207B88AF00C11B01 /* libz.tbd */,
+				93291093207B832200C11B01 /* CoreMotion.framework */,
+				93291091207B82AD00C11B01 /* OpenAL.framework */,
 				939BA88D206A54F5006357EA /* AudioToolbox.framework */,
 				939BA88B206A54EB006357EA /* AVFoundation.framework */,
 				939BA889206A54E4006357EA /* CoreTelephony.framework */,
@@ -175,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9329108F207B81F500C11B01 /* PBXTargetDependency */,
 			);
 			name = SimpleDemo;
 			productName = SimpleDemo;
@@ -206,12 +268,42 @@
 			mainGroup = 93560809185DFA7E0020ACDB;
 			productRefGroup = 93560813185DFA7E0020ACDB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 93291083207B81E600C11B01 /* Products */;
+					ProjectRef = 93291082207B81E600C11B01 /* cocos2d_libs.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				93560811185DFA7E0020ACDB /* SimpleDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		93291089207B81E700C11B01 /* libcocos2d Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d Mac.a";
+			remoteRef = 93291088207B81E700C11B01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9329108B207B81E700C11B01 /* libcocos2d iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d iOS.a";
+			remoteRef = 9329108A207B81E700C11B01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9329108D207B81E700C11B01 /* libcocos2d tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d tvOS.a";
+			remoteRef = 9329108C207B81E700C11B01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93560810185DFA7E0020ACDB /* Resources */ = {
@@ -238,6 +330,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9329108F207B81F500C11B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libcocos2d iOS";
+			targetProxy = 9329108E207B81F500C11B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9356081E185DFA7E0020ACDB /* InfoPlist.strings */ = {
@@ -352,6 +452,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = NO;
 				DEVELOPMENT_TEAM = X3X7VZZ2J6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -360,6 +467,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.professor.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +487,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = NO;
 				DEVELOPMENT_TEAM = X3X7VZZ2J6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -383,6 +502,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.professor.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

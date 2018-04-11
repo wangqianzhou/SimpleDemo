@@ -378,6 +378,17 @@
 - (void)rtcEngine:(AgoraRtcEngineKit * _Nonnull)engine videoSizeChangedOfUid:(NSUInteger)uid size:(CGSize)size rotation:(NSInteger)rotation;
 
 /**
+ *  This callback indicates remote video stream state has changed.
+ *
+ *  @param engine  The engine kit
+ *  @param uid     The user id
+ *  @param state   Stopped // Default state, video is started or remote user disabled/muted video stream
+                   Running // Running state, remote video can be displayed normally
+                   Frozen  // Remote video is frozen, probably due to network issue.
+ */
+- (void)rtcEngine:(AgoraRtcEngineKit * _Nonnull)engine remoteVideoStateChangedOfUid:(NSUInteger)uid state:(AgoraVideoRemoteState)state;
+
+/**
  *  Event of remote user video muted or unmuted
  *
  *  @param engine The engine kit
@@ -419,9 +430,6 @@
 
 - (void)rtcEngineTranscodingUpdated:(AgoraRtcEngineKit * _Nonnull)engine;
 
-- (void)rtcEngine:(AgoraRtcEngineKit * _Nonnull)engine publishingRequestReceivedFromUid:(NSUInteger)uid;
-- (void)rtcEngine:(AgoraRtcEngineKit * _Nonnull)engine publishingRequestAnsweredByOwner:(NSUInteger)uid accepted:(BOOL)accepted error:(AgoraErrorCode)error;
-- (void)rtcEngine:(AgoraRtcEngineKit * _Nonnull)engine unpublishingRequestReceivedFromOwner:(NSUInteger)uid;
 - (void)rtcEngine:(AgoraRtcEngineKit * _Nonnull)engine streamInjectedStatusOfUrl:(NSString * _Nonnull)url uid:(NSUInteger)uid status:(AgoraInjectStreamStatus)status;
 
 @end
@@ -527,9 +535,6 @@ __attribute__((visibility("default"))) @interface AgoraRtcEngineKit : NSObject
 
 - (int)setLiveTranscoding:(AgoraLiveTranscoding *_Nullable) transcoding;
 
-- (int)sendPublishingRequestToOwner:(NSUInteger) uid;
-- (int)answerPublishingRequestOfUid:(NSUInteger) uid accepted:(bool)accepted;
-- (int)sendUnpublishingRequestToUid:(NSUInteger) uid;
 - (int)addInjectStreamUrl:(NSString * _Nonnull) url config:(AgoraLiveInjectStreamConfig * _Nonnull)config;
 - (int)removeInjectStreamUrl:(NSString * _Nonnull) url;
 
@@ -727,6 +732,10 @@ description:(NSString * _Nullable)description;
  *  @return 0 when executed successfully. return negative value if failed.
  */
 - (int)setupRemoteVideo:(AgoraRtcVideoCanvas * _Nonnull)remote;
+
+- (int)addVideoWatermark:(AgoraImage * _Nonnull)watermark NS_SWIFT_NAME(addVideoWatermark(_:));
+
+- (void)clearVideoWatermarks;
 
 /**
  *  Configure display setting of remote view. And it could be called mutiple times during a call.
@@ -995,10 +1004,17 @@ description:(NSString * _Nullable)description;
                withVolume:(double)volume;
 - (int)playEffect:(int)soundId
          filePath:(NSString * _Nullable)filePath
-             loop:(BOOL)loop
+        loopCount:(int)loopCount
             pitch:(double)pitch
               pan:(double)pan
-             gain:(double)gain;
+             gain:(double)gain __deprecated;
+- (int)playEffect:(int)soundId
+         filePath:(NSString * _Nullable)filePath
+        loopCount:(int)loopCount
+            pitch:(double)pitch
+              pan:(double)pan
+             gain:(double)gain
+          publish:(BOOL)publish;
 - (int)stopEffect:(int)soundId;
 - (int)stopAllEffects;
 - (int)preloadEffect:(int)soundId
@@ -1172,8 +1188,8 @@ description:(NSString * _Nullable)description;
 - (void)userMuteVideoBlock:(void(^ _Nullable)(NSUInteger uid, BOOL muted))userMuteVideoBlock __deprecated;
 - (void)localVideoStatBlock:(void(^ _Nullable)(NSInteger sentBitrate, NSInteger sentFrameRate))localVideoStatBlock __deprecated;
 - (void)remoteVideoStatBlock:(void(^ _Nullable)(NSUInteger uid, NSInteger delay, NSInteger receivedBitrate, NSInteger receivedFrameRate))remoteVideoStatBlock __deprecated;
-- (void)cameraReadyBlock:(void(^ _Nullable)())cameraReadyBlock __deprecated;
-- (void)connectionLostBlock:(void(^ _Nullable)())connectionLostBlock __deprecated;
+- (void)cameraReadyBlock:(void(^ _Nullable)(void))cameraReadyBlock __deprecated;
+- (void)connectionLostBlock:(void(^ _Nullable)(void))connectionLostBlock __deprecated;
 - (void)rejoinChannelSuccessBlock:(void(^ _Nullable)(NSString * _Nonnull channel, NSUInteger uid, NSInteger elapsed))rejoinChannelSuccessBlock __deprecated;
 - (void)rtcStatsBlock:(void(^ _Nullable)(AgoraChannelStats * _Nonnull stat))rtcStatsBlock __deprecated;
 - (void)leaveChannelBlock:(void(^ _Nullable)(AgoraChannelStats * _Nonnull stat))leaveChannelBlock __deprecated;
