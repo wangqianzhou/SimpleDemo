@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import <objc/message.h>
 #import "UIView+Addtions.h"
+#import <ifaddrs.h>
+#import <sys/socket.h>
+#import <netinet/in.h>
+#import <arpa/inet.h>
 
 const int cstBtnHeight = 100;
 const int cstBtnWidth  = 200;
@@ -74,8 +78,41 @@ const int cstBtnWidth  = 200;
 #pragma mark- Functions
 - (void)onBtnClick:(id)sender
 {
-
+    NSLog(@"\n%@", [[self class] getIpAddresses]);
 }
 
-
++ (NSDictionary *)getIpAddresses {
+    NSMutableDictionary* addresses = [[NSMutableDictionary alloc] init];
+    struct ifaddrs *interfaces = NULL;
+    struct ifaddrs *temp_addr = NULL;
+    
+    // retrieve the current interfaces - returns 0 on success
+    NSInteger success = getifaddrs(&interfaces);
+    //NSLog(@"%@, success=%d", NSStringFromSelector(_cmd), success);
+    if (success == 0) {
+        // Loop through linked list of interfaces
+        temp_addr = interfaces;
+        while(temp_addr != NULL) {
+            if(temp_addr->ifa_addr->sa_family == AF_INET) {
+                // Get NSString from C String
+                NSString* ifaName = [NSString stringWithUTF8String:temp_addr->ifa_name];
+                NSString* address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *) temp_addr->ifa_addr)->sin_addr)];
+                NSString* mask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *) temp_addr->ifa_netmask)->sin_addr)];
+                NSString* gateway = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *) temp_addr->ifa_dstaddr)->sin_addr)];
+                
+                NSDictionary* netAddress = @{
+                                             @"name": ifaName,
+                                             @"address": address,
+                                             @"netmask": mask,
+                                             @"gateway": gateway,
+                                             };
+                
+                addresses[ifaName] = netAddress;
+            }
+            temp_addr = temp_addr->ifa_next;
+        }
+    }
+    
+    return addresses;
+}
 @end

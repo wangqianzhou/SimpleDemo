@@ -14,7 +14,7 @@
 		93560820185DFA7E0020ACDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9356081E185DFA7E0020ACDB /* InfoPlist.strings */; };
 		93560822185DFA7E0020ACDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93560821185DFA7E0020ACDB /* main.m */; };
 		93560826185DFA7E0020ACDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93560825185DFA7E0020ACDB /* AppDelegate.m */; };
-		9356082C185DFA7E0020ACDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356082B185DFA7E0020ACDB /* ViewController.m */; };
+		9356082C185DFA7E0020ACDB /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9356082B185DFA7E0020ACDB /* ViewController.mm */; };
 		9356082E185DFA7E0020ACDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9356082D185DFA7E0020ACDB /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		93560824185DFA7E0020ACDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93560825185DFA7E0020ACDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9356082A185DFA7E0020ACDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9356082B185DFA7E0020ACDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9356082B185DFA7E0020ACDB /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		9356082D185DFA7E0020ACDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93576B122011ED04003A003C /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		93576B132011ED12003A003C /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				93560824185DFA7E0020ACDB /* AppDelegate.h */,
 				93560825185DFA7E0020ACDB /* AppDelegate.m */,
 				9356082A185DFA7E0020ACDB /* ViewController.h */,
-				9356082B185DFA7E0020ACDB /* ViewController.m */,
+				9356082B185DFA7E0020ACDB /* ViewController.mm */,
 				9356082D185DFA7E0020ACDB /* Images.xcassets */,
 				9356081C185DFA7E0020ACDB /* Supporting Files */,
 			);
@@ -194,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9356082C185DFA7E0020ACDB /* ViewController.m in Sources */,
+				9356082C185DFA7E0020ACDB /* ViewController.mm in Sources */,
 				93560826185DFA7E0020ACDB /* AppDelegate.m in Sources */,
 				9310CCF3205F4C2C0061E261 /* UIView+Addtions.m in Sources */,
 				93560822185DFA7E0020ACDB /* main.m in Sources */,
@@ -314,7 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				DEVELOPMENT_TEAM = X3X7VZZ2J6;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
@@ -330,7 +333,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				DEVELOPMENT_TEAM = X3X7VZZ2J6;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleDemo/SimpleDemo-Prefix.pch";
 				INFOPLIST_FILE = "SimpleDemo/SimpleDemo-Info.plist";
