@@ -16,7 +16,8 @@ const int cstBtnWidth  = 100;
 
 NSString* const kAgoraRtcAppKey = @"";
 
-@interface ViewController ()<AgoraRtcEngineDelegate>
+@interface ViewController ()<AgoraRtcEngineDelegate, UIWebViewDelegate, UIScrollViewDelegate>
+@property(nonatomic, strong)UIWebView* webView;
 @property(nonatomic, strong)AgoraRtcEngineKit* sharedEngine;
 @property(nonatomic, strong)UILabel* usersLabel;
 @property(nonatomic, strong)NSMutableSet* channelUsers;
@@ -32,6 +33,8 @@ NSString* const kAgoraRtcAppKey = @"";
     [mainView setBackgroundColor:[UIColor whiteColor]];
     self.view = mainView;
     
+    [self setupWebViewWithFrame:screen];
+    
     _usersLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, screen.size.width, 80)];
     _usersLabel.numberOfLines = 2;
     [self.view addSubview:_usersLabel];
@@ -46,17 +49,40 @@ NSString* const kAgoraRtcAppKey = @"";
     btnLeaveChannel.top = 0;
     btnLeaveChannel.tag = 1;
     
-    UIButton* btnExit = [self buttonWithTitle:@"Exit"];
+    UIButton* btnExit = [self buttonWithTitle:@"Run"];
     btnExit.bottom = self.view.bottom;
     btnExit.left = 0;
     btnExit.tag = 2;
 
-    UIButton* btnTest = [self buttonWithTitle:@"Test"];
+    UIButton* btnTest = [self buttonWithTitle:@"Exit"];
     btnTest.bottom = self.view.bottom;
     btnTest.right = self.view.right;
-    btnTest.tag = 2;
+    btnTest.tag = 3;
     
     self.channelUsers = [NSMutableSet set];
+}
+
+- (void)setupWebViewWithFrame:(CGRect)frame
+{
+    UIWebView* webView = [[UIWebView alloc] initWithFrame:frame];
+    webView.dataDetectorTypes = UIDataDetectorTypeNone;
+    webView.mediaPlaybackRequiresUserAction = NO;
+    webView.scrollView.bounces = NO;
+    
+    webView.scrollView.delegate = self;
+    webView.allowsLinkPreview = NO;
+    webView.scalesPageToFit = YES;
+    webView.delegate = self;
+    webView.allowsLinkPreview = YES;
+    [self.view addSubview:webView];
+    
+    self.webView = webView;
+}
+
+- (void)loadRequest
+{
+    NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://waynewanghuai.github.io"]];
+    [self.webView loadRequest:request];
 }
 
 - (UIButton*)buttonWithTitle:(NSString*)title
@@ -114,22 +140,29 @@ NSString* const kAgoraRtcAppKey = @"";
 #pragma mark- Functions
 - (void)onBtnClick:(UIButton*)sender
 {
-    if (sender.tag == 0) {
+    if (sender.tag == 0)
+    {
         self.myId = arc4random();
         [self updateUserList];
         [_sharedEngine joinChannelByToken:kAgoraRtcAppKey channelId:@"MyDemoChannel" info:nil uid:self.myId joinSuccess:^(NSString * _Nonnull channel, NSUInteger uid, NSInteger elapsed) {
             [_sharedEngine setEnableSpeakerphone:YES];
             NSLog(@"Join Channel success...");
         }];
-    } else if (sender.tag == 1) {
+    }
+    else if (sender.tag == 1)
+    {
         [_sharedEngine leaveChannel:^(AgoraChannelStats * _Nonnull stat) {
             NSLog(@"Leave Channel, current channel state: %@", stat);
             [self clearAllUser];
         }];
-    } else if (sender.tag == 2) {
+    }
+    else if (sender.tag == 2)
+    {
+        [self loadRequest];
+    }
+    else if (sender.tag == 3)
+    {
         exit(0);
-    } else if (sender.tag == 3) {
-        // Do Test
     }
 }
 
